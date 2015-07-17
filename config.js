@@ -13,7 +13,7 @@ module.exports = function() {
      * the NODE_ENV environment var.
      */
     environment: 'development',
-    // Source code directory. Is important to include the last fordward slash
+    // Source code directory.
     source: 'source/',
     // Build directory, is where the compiled code will be output.
     build: 'build/',
@@ -21,7 +21,7 @@ module.exports = function() {
     // they will be copied to the same dir on the build folder
     images: 'assets/img',
     /**
-     * Views directory. This is the dir where all the Jade files should be to be compiled
+     * Views directory. This is the dir where all the Jade files should live
      * Important: only will be compiled *.jade files in this exact dir and not any sub dir
      * you could use a subdir to put partials on it and include in jade.
      */
@@ -58,7 +58,7 @@ module.exports = function() {
     jsName: 'app.js',
     // This is the browser sync options
     syncOptions: {
-      // Entry poit for the application
+      // Entry point for the application
       index: 'index.html',
       // If this option is true, the project will be open in browser after compile.
       open: false,
