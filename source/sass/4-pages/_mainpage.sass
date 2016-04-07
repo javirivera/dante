@@ -1,0 +1,55 @@
+.page-wrap-background
+	top: 0
+	margin: 0
+	padding: 0
+	height: 100%
+	width: 100%
+	background-color: white
+	opacity: .5
+	position: fixed
+	z-index: 1
+
+.page-home
+	+outer-container(90%)
+	max-width: 600px
+	position: relative
+	z-index: 3
+	opacity: 1
+
+	section
+		padding: 0 20px
+
+	p:first-of-type
+		font-size: 1.5em
+
+	.image-gif, .img-responsive
+		width: 100%
+		height: auto
+		max-width: 600px
+
+	.dvideo
+		height: 300px
+		width: 100%
+
+	button.btn
+		background-color: black
+		width: 100%
+		margin: 60px auto
+		color: white
+		border: none
+		border-radius: 0px
+		height: 60px
+		font-size: 1em
+		+transition(all .2s ease-in)
+
+		&:hover
+			background-color: #0074D9
+
+.credits
+	font-size: .9em
+
+#element::-webkit-scrollbar
+    display: none
+
+.footer
+	margin-bottom: 20px

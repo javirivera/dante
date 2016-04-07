@@ -138,7 +138,7 @@ gulp.task('jade', function () {
     templates = templates
       .pipe($.size({ title: 'Jade Templates Before Compression' }))
       .pipe($.jade())
-      .pipe($.size({ title: 'Jada Templates After Compression' }));
+      .pipe($.size({ title: 'Jade Templates After Compression' }));
   } else {
     templates.pipe($.jade(jadeOptions));
   }
@@ -216,4 +216,3 @@ gulp.task('default', ['help']);
  function log(msg) {
    console.log(msg);
 }
-
